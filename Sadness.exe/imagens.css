@@ -3,6 +3,7 @@
 
 h1 {
     font-family: 'Rubik Iso', cursive;
+    justify-content: center;
 }
 
 p {
@@ -136,58 +137,7 @@ main {
     }
 }
 
-@keyframes floatText {
-    0%, 100% {
-        opacity: 0.5;
-        transform: translateY(0px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(-10px);
-    }
+img {
+    height: 500px;
+    width: 500px;
 }
-
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background: rgba(52, 57, 109, 0.95);
-    border-top: 1px solid #c8c0dc;
-    margin-top: 500px;
-}
-
-h5 {
-    text-align: center;
-    margin-top: 150px;
-    color: #ffffff44;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 4s ease-in-out infinite;
-}
-
-h4 {
-    text-align: center;
-    margin-top: 100px;
-    color: #ffffff44;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 3.5s ease-in-out infinite;
-}
-
-h6 {
-    text-align: center;
-    margin-top: 200px;
-    color: #ffffff44;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 4.5s ease-in-out infinite;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 250px;
-    color: #ffffff27;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 5s ease-in-out infinite;
-}
-

@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Special+Elite&display=swap');
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 h1 {
     font-family: 'Rubik Iso', cursive;
@@ -46,6 +56,36 @@ body {
     font-size: 2rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
+}
+
+.content-section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 40px;
+}
+
+.text-block {
+    margin-bottom: 40px;
+}
+
+.text-block p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    color: #c8c0dc;
+    text-align: justify;
+    margin: 0;
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+    opacity: 0;
+}
+
+.divider {
+    height: 2px;
+    background: rgba(200, 192, 220, 0.3);
+    margin: 60px 0;
 }
 
 .brand p {
@@ -97,56 +137,6 @@ h2 {
     text-align: center;
 }
 
-main {
-    padding: 0 24px 60px;
-}
-
-.content {
-    display: flex;
-    align-items: center;
-    gap: 36px;
-    max-width: 1040px;
-    margin: 0 auto;
-    background-color: rgba(0, 6, 27, 0.85);
-    padding: 24px 32px;
-    border-radius: 20px;
-}
-
-.content p {
-    text-align: justify;
-    flex: 1;
-    margin: 0;
-    text-align: left;
-    line-height: 1.6;
-}
-
-.content img {
-    width: 450px;
-    height: auto;
-}
-
-@media (max-width: 900px) {
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content img {
-        width: min(80vw, 320px);
-    }
-}
-
-@keyframes floatText {
-    0%, 100% {
-        opacity: 0.5;
-        transform: translateY(0px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(-10px);
-    }
-}
-
 footer {
     text-align: center;
     padding: 20px 0;
@@ -154,40 +144,3 @@ footer {
     border-top: 1px solid #c8c0dc;
     margin-top: 500px;
 }
-
-h5 {
-    text-align: center;
-    margin-top: 150px;
-    color: #ffffff44;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 4s ease-in-out infinite;
-}
-
-h4 {
-    text-align: center;
-    margin-top: 100px;
-    color: #ffffff44;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 3.5s ease-in-out infinite;
-}
-
-h6 {
-    text-align: center;
-    margin-top: 200px;
-    color: #ffffff44;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 4.5s ease-in-out infinite;
-}
-
-h3 {
-    text-align: center;
-    margin-top: 250px;
-    color: #ffffff27;
-    font-size: small;
-    font-family: 'special elite', cursive;
-    animation: floatText 5s ease-in-out infinite;
-}
-
